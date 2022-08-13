@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <style>
+      .fruit-container  li{
+            color:tomato;
+        }
+        #fruits-title{
+            color:black;
+        }
+        .importent-places{
+            color: blueviolet;
+
+          
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+        <h1>
+            welcome to my dom
+        </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo corporis doloribus, ducimus, ipsum
+                consectetur ab illum voluptatem blanditiis mollitia culpa dolorum facilis accusantium id saepe molestias! Id,
+                est molestias! Soluta, nam ducimus nemo consectetur quibusdam veniam animi. Voluptatibus ipsa voluptatem
+                molestiae adipisci praesentium vitae laboriosam aspernatur hic sed in!</p>
+        </section>
+        
+    </header>
+    <main>
+        
+        
+           
+        <section>
+            <h1>my awsome dom de baba</h1>
+            
+            <ul>
+                <li>jalali song</li>
+                <li>pagla baba</li>
+                <li> marfoti</li>
+                <li> bonobash</li>
+                <li> Dom de re baba</li>
+            </ul>
+        </section>
+
+        <section class="fruit-container">
+            <h1 id="fruits-title"> fruit I Like</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+            
+        </ul>
+        </section>
+        <section>
+            <h1 id="place-tile">Place I Like to Visit</h1>
+            <ul>
+                <li class="importent-places">sundarban</li>
+                <li class="importent-places">bandarban</li>
+                <li class="importent-places">shalbon</li>
+                <li class="another-title">katabon</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js">
+        
+    </script>
+    <script>
+
+        const fruitTitle = document.getElementById('fruits-title');
+        fruitTitle.innerText = 'fruit tile chnaged by JS'
+
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection){
+            // console.log(li.innerText);
+        }
+        const allHeading =document.getElementsByTagName('h1')
+        for (const h1 of allHeading){
+            // console.log(h1.innerText);
+        }
+
+        const places = document.getElementsByClassName('importent-places');
+        // console.log(places);
+        for (const list of places){
+            console.log(list.innerText);
+        }
+    </script>
+    
+
+</body>
+
+
+</html>
