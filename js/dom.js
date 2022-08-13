@@ -13,3 +13,5 @@ for (const section of sections) {
 const place = document.getElementById('place');
 place.classList.add('text-center');
 place.classList.remove('font');
+
+
