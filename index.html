@@ -53,7 +53,7 @@
         </section>
 
         <section class="fruit-container">
-            <h1 id="fruits-title"> fruit I Like</h1>
+            <h1 id="fruits-title" class=" fruit hello hi nai"> fruit I Like</h1>
         <ul>
             <li>Apple</li>
             <li>Banana</li>
@@ -61,7 +61,8 @@
             
         </ul>
         </section>
-        <section>
+
+        <section id="place" class="font">
             <h1 id="place-tile">Place I Like to Visit</h1>
             <ul>
                 <li class="importent-places">sundarban</li>
@@ -92,7 +93,12 @@
         const places = document.getElementsByClassName('importent-places');
         // console.log(places);
         for (const list of places){
-            console.log(list.innerText);
+            // console.log(list.innerText);
+        }
+
+        const someLi = document.querySelectorAll('.fruit-container li')
+        for ( const li of someLi){
+            //console.log(li.innerText);
         }
     </script>
     
